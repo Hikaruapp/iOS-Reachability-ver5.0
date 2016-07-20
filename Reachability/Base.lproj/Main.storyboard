@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remote Host: www.aaple.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wle-SY-3gW">
+                                <rect key="frame" x="20" y="28" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKd-hC-hGi">
+                                <rect key="frame" x="20" y="57" width="180" height="21"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Y69-Rl-Ooe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-rA-TJ7">
+                                <rect key="frame" x="210" y="53" width="69" height="30"/>
+                                <state key="normal" title="get status"/>
+                                <connections>
+                                    <action selector="buttonRemoteStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVq-Pn-Brm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TCP/IP Routing Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FH-5U-kr6">
+                                <rect key="frame" x="20" y="98" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q01-c8-sBK">
+                                <rect key="frame" x="20" y="127" width="180" height="21"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Rdx-eS-V86"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn7-CP-k6H">
+                                <rect key="frame" x="210" y="123" width="69" height="30"/>
+                                <state key="normal" title="get status"/>
+                                <connections>
+                                    <action selector="buttonTCPIPStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Nj-tn-gZP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2FH-5U-kr6" firstAttribute="top" secondItem="MKd-hC-hGi" secondAttribute="bottom" constant="20" id="2pu-cx-tje"/>
+                            <constraint firstItem="2FH-5U-kr6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AzN-iO-RNy"/>
+                            <constraint firstItem="BtH-rA-TJ7" firstAttribute="leading" secondItem="MKd-hC-hGi" secondAttribute="trailing" constant="10" id="HAj-s3-4FK"/>
+                            <constraint firstItem="Wle-SY-3gW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Isy-zE-a5c"/>
+                            <constraint firstItem="Wle-SY-3gW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JRD-ca-GG9"/>
+                            <constraint firstItem="cn7-CP-k6H" firstAttribute="leading" secondItem="q01-c8-sBK" secondAttribute="trailing" constant="10" id="UH8-bw-Azg"/>
+                            <constraint firstItem="MKd-hC-hGi" firstAttribute="top" secondItem="Wle-SY-3gW" secondAttribute="bottom" constant="8" id="WRh-KR-Mj9"/>
+                            <constraint firstItem="MKd-hC-hGi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hOY-f9-t2t"/>
+                            <constraint firstItem="BtH-rA-TJ7" firstAttribute="centerY" secondItem="MKd-hC-hGi" secondAttribute="centerY" id="iSz-3i-bmh"/>
+                            <constraint firstItem="q01-c8-sBK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o1z-62-JvJ"/>
+                            <constraint firstItem="cn7-CP-k6H" firstAttribute="centerY" secondItem="q01-c8-sBK" secondAttribute="centerY" id="r1W-RW-sb0"/>
+                            <constraint firstItem="q01-c8-sBK" firstAttribute="top" secondItem="2FH-5U-kr6" secondAttribute="bottom" constant="8" id="xcH-8h-5wT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelRemoteStatus" destination="MKd-hC-hGi" id="rwA-y2-5yl"/>
+                        <outlet property="labelTCPIPStatus" destination="q01-c8-sBK" id="sSE-ZH-Ium"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
